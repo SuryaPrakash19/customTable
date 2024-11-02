@@ -1,0 +1,60 @@
+.table {
+  border-collapse: separate;
+  border-spacing: 1rem;
+  margin: 0;
+  padding: 0%;
+  text-align: left;
+  thead {
+    position: sticky;
+    top: 0;
+  }
+  display: inline-block;
+  overflow-y: scroll;
+  height: 80vh;
+  border: 1px solid black;
+  thead {
+    border: 1px solid black;
+    background-color: rgb(255, 230, 117);
+    color: black;
+  }
+
+  tr {
+    border: 1px solid black;
+    background-color: antiquewhite;
+    &:nth-child(even) {
+      background-color: azure;
+    }
+    &:nth-child(odd) {
+      background-color: antiquewhite;
+    }
+  }
+
+  td,
+  th {
+    border: 1px solid black;
+    border-radius: 1rem;
+    padding: 1rem;
+  }
+  th {
+    border-radius: 8% !important;
+  }
+}
+/* width */
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
