@@ -1,16 +1,21 @@
-<table class="table">
-  <thead id="heading">
-    @for (column of columnData; track $index) {
-    <th>{{column.Header}}</th>
-    }
-  </thead>
-  <tbody>
-    @for (row of tableData; track $index) {
-    <tr>
-      @for (columnHeader of columnData; track $index) {
-      <td>{{row[columnHeader.accessor]}}</td>
+<div class="container">
+  <div class="paginationBar">
+    1,2,3
+  </div>
+  <table class="table">
+    <thead id="heading">
+      @for (column of columnData; track $index) {
+      <th>{{column.Header}}</th>
       }
-    </tr>
-    }
-  </tbody>
-</table>
+    </thead>
+    <tbody>
+      @for (row of tableData; track $index) {
+      <tr>
+        @for (columnHeader of columnData; track $index) {
+        <td>{{row[columnHeader.accessor]}}</td>
+        }
+      </tr>
+      }
+    </tbody>
+  </table>
+</div>
